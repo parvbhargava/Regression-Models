@@ -30,7 +30,7 @@ X_test_normal = ct.transform(X_test)
 
 # set seed
 tf.random.set_seed(42)
-# Create a model as per above specifications
+# Create a model
 insurance_model = tf.keras.Sequential(name="InsuranceModel")
 insurance_model.add(tf.keras.layers.Dense(200))
 insurance_model.add(tf.keras.layers.Dense(100))
